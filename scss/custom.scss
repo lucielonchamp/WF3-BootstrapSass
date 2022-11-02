@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$purple: #6f42c1;
+$yellow: #ffc107;
+
+$custom-theme-colors: (
+  "purple": $purple,
+  "yellow": $yellow,
+);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+@import "../node_modules/bootstrap/scss/bootstrap";
